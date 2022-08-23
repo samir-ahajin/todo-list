@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type ="text/css"href="./css/index.css">
+</head>
+<body> 
+    <div id="content">
+        
+        <div id="header" class="center">
+            <div>
+            
+                <h1><i class="fa-solid fa-list-ul"></i>&nbsp;TASK<span style="color:orangered ;">s</span></h1>
+            </div>
+            <!-- to be added feature
+            <div id = "selections">
+                <ul id="nav">   
+                    <li>Today</li>
+                    <li>Tasks</li>   
+                </ul>
+            </div>-->
+        </div>
+        <div id="main-con">
+            <div id ="list">
+                <div id="create">
+                    <i id="show"class="fa-solid fa-circle-plus" aria-hidden="true"></i> 
+                </div> 
+                <div>
+                    <form action="#">
+                        <label for="months">Sort:</label>
+                        <select   name="month" id="months">
+                            <option value="all">All</option>
+                            <option value="today">Today</option>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                    </form>
+                </div>
+                <div id ="tasklist" class="t-wrapper">
+                    <div class="t-scroll">
+                        <table id ="mtable">
+                            <tr>
+                                <th>Task</th>
+                                <th>Date</th>
+                                <th>Time (24:00)</th>
+                            </tr>
+                            <tbody id ="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id = "information">
+                <div id = "result"></div>
+            </div>  
+
+        </div>
+   
+        <div id="footer"  class="center">
+            <p>Copyright © 2022 samir-ahajin &nbsp;</p> 
+            <a href="https://github.com/samir-ahajin"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>  
+           
+        <div id="overlay" >
+            <div class="center">
+                <div id="overlay-con"  > 
+                    <i class="fa-solid fa-xmark close"></i>
+                    <div class="center">
+                    <button type="button" id="todo-btn"class="btn">Task</button>
+                    <button type="button"  id="project-btn"class="btn">Task Project</button>
+                    </div>
+                    <div id="selected">
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+
+    </div>
+
+   
+
+<script src="main.js"></script>
+</body>        
+
+</html>
