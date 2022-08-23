@@ -210,7 +210,6 @@ td, th{
     text-align: center;
     vertical-align: middle;
     height: 50px;
-    padding: .5rem 3px;
   
 }  
 .data-proj{
@@ -260,7 +259,7 @@ table button{
     background-color: var(--color);
     color: white;
     border-style: none;
-    min-width: 80px !important;
+    min-width: 50px !important;
     min-height: 30px !important;
 }
 #result h1{
@@ -270,7 +269,6 @@ table button{
     text-align: center;
 }
 #result ul{
-   padding: 1rem;
    line-height: 1.6;
 }
 #result p{
@@ -292,7 +290,7 @@ table button{
     padding: 1rem;
 }
 #result :nth-child(1) div:nth-child(2) .delete{
-    width: 400px !important;
+    max-width: 400px !important;
 }
 
 @media only screen and (max-width: 600px) {
