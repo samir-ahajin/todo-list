@@ -251,10 +251,12 @@ table button{
     color: white;
     transition: transform .7s;
 }
+
 .fa-github:hover{
     color: white;
     transform: scale(1.2) rotate(360deg);
 }
+
 .delete{
     background-color: var(--color);
     color: white;
